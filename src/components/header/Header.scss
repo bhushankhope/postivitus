@@ -1,0 +1,22 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .menu {
+    button {
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+    button:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    .get-quote {
+      padding: 1.25rem 2.1875rem;
+      border: solid 2px black;
+      border-radius: 14px;
+    }
+  }
+}

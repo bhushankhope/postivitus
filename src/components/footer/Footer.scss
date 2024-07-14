@@ -1,0 +1,51 @@
+.footer {
+  padding: 55px 60px 50px 60px;
+  background-color: #191a23;
+  border-radius: 45px 45px 0px 0px;
+  .heading {
+    margin-bottom: 4rem;
+    .footer-menu {
+      display: flex;
+      gap: 40px;
+
+      p {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-contact {
+    .contact {
+      max-width: 332px;
+
+      > h4 {
+        width: fit-content;
+        margin-bottom: 28px;
+      }
+
+      > p {
+        margin-bottom: 20px;
+      }
+    }
+
+    .email {
+      padding: 60px 40px;
+      background-color: #292a32;
+      border-radius: 14px;
+      input {
+        width: 285px;
+        height: 4rem;
+        border-radius: 14px;
+        background-color: transparent;
+        border: solid 1px white;
+        padding: 22px 35px;
+      }
+      .subscribe {
+        padding: 20px 35px;
+        background-color: #b9ff66;
+        border-radius: 14px;
+        margin-left: 20px;
+      }
+    }
+  }
+}

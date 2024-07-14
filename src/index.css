@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1240px;
+  margin: 0 6.25rem;
+  margin-top: 3.75rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk';
+  display: flex;
+  justify-content: center;
+}
+
+.label-medium {
+  font-size: 1.25rem;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.highlight {
+  padding: 0 7px;
+  background-color: #B9FF66;
+  border-radius: 7px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 38.28px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 25.5px;
+  font-weight: 500;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}

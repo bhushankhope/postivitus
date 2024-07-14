@@ -1,0 +1,25 @@
+.service-card {
+  width: 600px;
+  max-width: 600px;
+  border-radius: 2.8125rem;
+  border: solid 1px #191A23;
+  box-shadow: 0px 5px 0px 0px #191A23;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  .card-info {
+    .card-title {
+      font-size: 30px;
+      line-height: 38.28px;
+      font-weight: 500;
+      width: fit-content;
+    }
+
+    .learn-btn {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}
