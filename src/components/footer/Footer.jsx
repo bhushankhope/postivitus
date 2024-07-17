@@ -30,12 +30,14 @@ const Footer = () => {
           <p>Address: 1234 Main St Moonstone City, Stardust State 12345</p>
         </div>
         <div className="email">
-          <label htmlFor="email"></label>
+          <label htmlFor="email">
+
           <input type="text" id="email" name="email" placeholder="Email" />
+          </label>
           <button className="subscribe">Subscribe to news</button>
         </div>
       </div>
-      <div className="text-white mt-12">
+      <div className="text-white mt-12 flex flex-col gap-4 items-center">
         <span className="mr-10">© 2023 Positivus. All Rights Reserved.</span>
         <span className="underline">Privacy Policy</span>
       </div>

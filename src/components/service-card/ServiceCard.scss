@@ -23,3 +23,26 @@
     }
   }
 }
+
+@media(max-width: 768px) {
+  .service-card {
+    max-width: 390px;
+    position: relative;
+    width: 100%;
+    padding: 2.5rem;
+
+    .card-info {
+      .learn-btn{
+        .learn-label {
+          display: none;
+        }
+      }
+    }
+
+    .card-logo {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

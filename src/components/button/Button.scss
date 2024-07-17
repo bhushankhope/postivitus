@@ -8,3 +8,9 @@ button.button-dark {
   color: white;
   display: block;
 }
+
+@media(max-width: 430px) {
+  button.button-dark {
+    width: 100%;
+  }
+}

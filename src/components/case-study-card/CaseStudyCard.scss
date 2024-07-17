@@ -1,0 +1,11 @@
+.case-card {
+  min-width: calc(100vw - 2rem);
+  padding: 42px 50px;
+  background-color: #191A23;
+  border-radius: 2.8125rem;
+
+  .arrow {
+    transform: rotate(-45deg);
+    margin-left: 0.5rem;
+  }
+}

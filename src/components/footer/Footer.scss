@@ -4,8 +4,11 @@
   border-radius: 45px 45px 0px 0px;
   .heading {
     margin-bottom: 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
     .footer-menu {
       display: flex;
+      flex-wrap: wrap;
       gap: 40px;
 
       p {
@@ -15,6 +18,8 @@
   }
 
   .footer-contact {
+    flex-wrap: wrap;
+    gap: 2rem;
     .contact {
       max-width: 332px;
 
@@ -45,6 +50,40 @@
         background-color: #b9ff66;
         border-radius: 14px;
         margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .footer {
+    padding: 30px 20px;
+    .heading {
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      .footer-menu {
+        p {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .footer-contact {
+      .email {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        input {
+          width: 100%;
+        }
+
+        .subscribe {
+          margin: unset;
+          padding: 1rem;
+        }
       }
     }
   }

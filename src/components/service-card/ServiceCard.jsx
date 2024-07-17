@@ -41,7 +41,7 @@ const ServiceCard = ({ theme, title1, title2, image }) => {
         </h3>
         <button className="learn-btn">
           <LearnMore circle={themeColors.circle} arrow={themeColors.arrow} />
-          <span style={{ color: themeColors.circle }}>Learn More</span>
+          <span style={{ color: themeColors.circle }} className='learn-label'>Learn More</span>
         </button>
       </div>
       <img className="card-logo" src={image} alt={`${title1} ${title2}`} />

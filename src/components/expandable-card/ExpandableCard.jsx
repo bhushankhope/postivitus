@@ -8,12 +8,12 @@ const ExpandableCard = ({ digit, title, description }) => {
       style={{ backgroundColor: expanded === true ? '#B9FF66' : '#F3F3F3' }}
     >
       <div
-        className="flex heading justify-between mb-8"
+        className="flex heading justify-between mb-8 items-center"
         style={{ marginBottom: expanded ? '32px' : 0 }}
       >
         <div className="flex items-center">
           <span className="digit">{digit}</span>
-          <span className="title">{title}</span>
+          <h4 className="title">{title}</h4>
         </div>
         <button onClick={() => setExpanded(!expanded)} className="toggle">
           <span className="material-symbols-outlined icon align-bottom">

@@ -1,14 +1,14 @@
 .landing {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   column-gap: 6.75rem;
 
   .info {
     width: 50%;
     max-width: 33.1875rem;
-    .title {
-      line-height: 4.785rem;
+
+    .inner-banner {
+      display: none;
     }
 
     .description {
@@ -58,6 +58,15 @@
 }
 
 @media (max-width: 1280px) {
+  .services {
+    .proposal-card {
+      padding: 30px;
+
+      .card-info {
+        margin: 0;
+      }
+    }
+  }
   .proposal-img {
     display: none;
   }
@@ -94,12 +103,43 @@
       margin-left: 0.5rem;
     }
   }
+
+  .cards-mini {
+    display: none;
+  }
+
+  @media (max-width: 1012px) {
+    .case-study-card {
+      display: none;
+    }
+
+    .cards-mini {
+      display: grid;
+      gap: 1.25rem;
+    }
+  }
 }
 
 .working-process {
   .cards {
     .expandable-card:not(:last-child) {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    .cards-container {
+      justify-content: center;
+    }
+
+    .team-btn-wrap {
+      justify-content: center;
+
+      button {
+        width: 100%;
+      }
     }
   }
 }
@@ -125,7 +165,7 @@
             margin-right: 2rem;
           }
 
-          >input {
+          > input {
             margin-right: 0.5rem;
           }
         }
@@ -156,6 +196,37 @@
       textarea {
         height: 190px;
       }
+    }
+  }
+}
+
+@media (max-width: 1012px) {
+  .landing {
+    .info {
+      width: unset;
+      max-width: unset;
+
+      .inner-banner {
+        display: block;
+      }
+    }
+
+    .banner {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    .contact-card {
+      .form {
+        width: 100%;
+        padding: 40px 30px;
+      }
+    }
+    .contact-banner {
+      display: none;
     }
   }
 }

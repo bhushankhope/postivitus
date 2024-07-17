@@ -24,6 +24,7 @@ import ExpandableCard from './components/expandable-card/ExpandableCard';
 import PersonCard from './components/person-card/PersonCard';
 import Carousel from './components/carousel/Carousel';
 import Footer from './components/footer/Footer';
+import CaseStudyCard from './components/case-study-card/CaseStudyCard';
 
 function App() {
   return (
@@ -31,21 +32,22 @@ function App() {
       <Header></Header>
       <section className="landing mt-[70px] mb-[70px]">
         <div className="info">
-          <h1 className="text-6xl title">
+          <h1 className="title">
             Navigating the digital landscape for success
           </h1>
-          <div className="description label-medium">
+          <img src={LandingBanner} className='inner-banner' />
+          <p className="description">
             Our digital marketing agency helps businesses grow and succeed
             online through a range of services including SEO, PPC, social media
             marketing, and content creation.
-          </div>
+          </p>
           <Button label="Book a consultation"></Button>
         </div>
         <div className="banner">
           <img src={LandingBanner} />
         </div>
       </section>
-      <section className="logos flex flex-wrap justify-between mb-[140px]">
+      <section className="logos flex flex-wrap gap-4 justify-between mb-[140px]">
         {client_logos.map((logo) => {
           return (
             <img
@@ -75,7 +77,7 @@ function App() {
               Contact us today to learn more about how our digital marketing
               services can help your business grow and succeed online.
             </p>
-            <button className="button-dark">Get you free proposal</button>
+            <button className="button-dark">Get your free proposal</button>
           </div>
           <img src={proposal} className="proposal-img" />
         </div>
@@ -99,6 +101,11 @@ function App() {
                 </button>
               </div>
             );
+          })}
+        </div>
+        <div className='cards-mini'>
+          {case_study.map((study)=>{
+            return <CaseStudyCard text={study} key={study} />
           })}
         </div>
       </section>
@@ -125,25 +132,25 @@ function App() {
           label={team_header.label}
           description={team_header.description}
         ></SectionIntro>
-        <div className="flex flex-wrap gap-y-10 mb-10 justify-between">
+        <div className="flex flex-wrap gap-y-10 mb-10 justify-between cards-container">
           {team_data.map((team) => {
             return (
               <PersonCard key={team.role} personDetails={team}></PersonCard>
             );
           })}
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-end team-btn-wrap">
           <button className="button-dark">See all Team</button>
         </div>
       </section>
-      <section className="tesimonials mb-36">
+      {/* <section className="tesimonials mb-36">
         <SectionIntro
           label={testimonial_header.label}
           description={testimonial_header.description}
         ></SectionIntro>
 
         <Carousel testimonial={testimonial_data}></Carousel>
-      </section>
+      </section> */}
       <section className="contact-us mb-36">
         <SectionIntro
           label={contact_header.label}
@@ -196,7 +203,7 @@ function App() {
             </div>
             <button className="button-dark">Send Message</button>
           </div>
-          <img className="py-[56px]" src={ContactBanner} alt="contact-banner" />
+          <img className="py-[56px] w-fit contact-banner" src={ContactBanner} alt="contact-banner" />
         </div>
       </section>
       <Footer></Footer>

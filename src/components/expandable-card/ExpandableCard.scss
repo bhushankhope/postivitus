@@ -12,12 +12,6 @@
       margin-right: 20px;
     }
 
-    .title {
-      font-size: 30px;
-      line-height: 38.28px;
-      font-weight: 500;
-    }
-
     .toggle {
       height: 58px;
       width: 58px;
@@ -36,5 +30,23 @@
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .expandable-card {
+    padding: 30px;
+
+    .heading {
+      .digit {
+        font-size: 36px;
+        line-height: 38px;
+      }
+
+      .toggle {
+        height: 30px;
+        width: 30px;
+      }
+    }
   }
 }
