@@ -6,9 +6,9 @@ const CaseStudyCard = ({ text }) => {
       <p className='text-white mb-5'>{text}</p>
       <button className="text-[#B9FF66] label-medium">
         Learn More
-        <span className="material-symbols-outlined align-middle arrow">
+        {/* <span className="material-symbols-outlined align-middle arrow">
           arrow_forward
-        </span>
+        </span> */}
       </button>
     </div>
   );

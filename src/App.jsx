@@ -22,11 +22,12 @@ import ServiceCard from './components/service-card/ServiceCard';
 import SectionIntro from './components/section-intro/SectionIntro';
 import ExpandableCard from './components/expandable-card/ExpandableCard';
 import PersonCard from './components/person-card/PersonCard';
-import Carousel from './components/carousel/Carousel';
 import Footer from './components/footer/Footer';
 import CaseStudyCard from './components/case-study-card/CaseStudyCard';
+import ReactGA from 'react-ga4';
 
 function App() {
+  ReactGA.initialize('G-S4JL2L32JM');
   return (
     <>
       <Header></Header>
@@ -35,7 +36,7 @@ function App() {
           <h1 className="title">
             Navigating the digital landscape for success
           </h1>
-          <img src={LandingBanner} className='inner-banner' />
+          <img src={LandingBanner} className="inner-banner" />
           <p className="description">
             Our digital marketing agency helps businesses grow and succeed
             online through a range of services including SEO, PPC, social media
@@ -103,9 +104,9 @@ function App() {
             );
           })}
         </div>
-        <div className='cards-mini'>
-          {case_study.map((study)=>{
-            return <CaseStudyCard text={study} key={study} />
+        <div className="cards-mini">
+          {case_study.map((study) => {
+            return <CaseStudyCard text={study} key={study} />;
           })}
         </div>
       </section>
@@ -143,14 +144,14 @@ function App() {
           <button className="button-dark">See all Team</button>
         </div>
       </section>
-      {/* <section className="tesimonials mb-36">
+      <section className="tesimonials mb-36">
         <SectionIntro
           label={testimonial_header.label}
           description={testimonial_header.description}
         ></SectionIntro>
-
-        <Carousel testimonial={testimonial_data}></Carousel>
-      </section> */}
+        {/* <Carousel testimonial={testimonial_data}></Carousel> */}
+        {/* <CarouselComponent></CarouselComponent> */}
+      </section>
       <section className="contact-us mb-36">
         <SectionIntro
           label={contact_header.label}
@@ -203,7 +204,11 @@ function App() {
             </div>
             <button className="button-dark">Send Message</button>
           </div>
-          <img className="py-[56px] w-fit contact-banner" src={ContactBanner} alt="contact-banner" />
+          <img
+            className="py-[56px] w-fit contact-banner"
+            src={ContactBanner}
+            alt="contact-banner"
+          />
         </div>
       </section>
       <Footer></Footer>
