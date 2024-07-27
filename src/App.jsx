@@ -144,14 +144,14 @@ function App() {
           <button className="button-dark">See all Team</button>
         </div>
       </section>
-      <section className="tesimonials mb-36">
+      {/* <section className="tesimonials mb-36">
         <SectionIntro
           label={testimonial_header.label}
           description={testimonial_header.description}
         ></SectionIntro>
-        {/* <Carousel testimonial={testimonial_data}></Carousel> */}
-        {/* <CarouselComponent></CarouselComponent> */}
-      </section>
+        <Carousel testimonial={testimonial_data}></Carousel>
+        <CarouselComponent></CarouselComponent>
+      </section> */}
       <section className="contact-us mb-36">
         <SectionIntro
           label={contact_header.label}
